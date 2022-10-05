@@ -1,0 +1,38 @@
+@keyframes trolley-ride {
+
+    0% {
+      left: 0px;
+    }
+  
+    50% {
+      left: 230px;
+    }
+  
+    100% {
+      left: 200px;
+    }
+}
+    
+@keyframes rain {
+      from {
+        transform: rotate(105deg) translateX(0);
+      }
+      to {
+        transform: rotate(105deg) translateX(calc(200px + 20px));
+      }
+    }
+    
+    @keyframes thunder {
+      0% {
+        background-color: transparent;
+      }
+      1% {
+        background-color: white;
+      }
+      2% {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      8% {
+        background-color: transparent;
+      }
+}

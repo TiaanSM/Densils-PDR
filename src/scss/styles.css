@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --thunder-duration: 5s;
+  --thunder-delay: 10s;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #333;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.pdr-accent {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.nav-links > li {
+  display: inline;
+  margin-inline: 2rem;
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+header {
+  width: 100vw;
+  height: auto;
+  background-color: gray;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+}
+
+.promo-container {
+  background-image: linear-gradient(to bottom, #030420, #000000 70%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.promo-car-img {
+  position: relative;
+  top: 2rem;
+}
+
+.text-content {
+  width: auto;
+  height: auto;
+}
+
+.promo-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+.promo-container-2 {
+  width: 100vw;
+  height: auto;
+  background-color: lightgray;
+}
+
+.promo-trolley-img {
+  position: relative;
+  left: 0px;
+  -webkit-animation: trolley-ride 2s;
+          animation: trolley-ride 2s;
+}
+
+hr.thunder {
+  border: unset;
+  position: absolute;
+  width: 100vw;
+  height: 200px;
+  -webkit-animation-name: thunder;
+          animation-name: thunder;
+  -webkit-animation-duration: var(--thunder-duration);
+          animation-duration: var(--thunder-duration);
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: var(--thunder-delay);
+          animation-delay: var(--thunder-delay);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+hr:not(.thunder) {
+  width: 50px;
+  border-color: transparent;
+  border-right-color: rgba(255, 255, 255, 0.7);
+  border-right-width: 50px;
+  position: absolute;
+  bottom: -15rem; /* to move animation*/
+  transform-origin: 100% 50%;
+  -webkit-animation-name: rain;
+          animation-name: rain;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes trolley-ride {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 230px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+@keyframes trolley-ride {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 230px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+@-webkit-keyframes rain {
+  from {
+    transform: rotate(105deg) translateX(0);
+  }
+  to {
+    transform: rotate(105deg) translateX(220px);
+  }
+}
+@keyframes rain {
+  from {
+    transform: rotate(105deg) translateX(0);
+  }
+  to {
+    transform: rotate(105deg) translateX(220px);
+  }
+}
+@-webkit-keyframes thunder {
+  0% {
+    background-color: transparent;
+  }
+  1% {
+    background-color: white;
+  }
+  2% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  8% {
+    background-color: transparent;
+  }
+}
+@keyframes thunder {
+  0% {
+    background-color: transparent;
+  }
+  1% {
+    background-color: white;
+  }
+  2% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  8% {
+    background-color: transparent;
+  }
+}
+@media (max-width: 40em) {
+  ul {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
