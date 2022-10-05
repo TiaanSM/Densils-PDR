@@ -50,15 +50,16 @@ a {
   font-size: 1.3rem;
 }
 
-header {
-  width: 100vw;
-  height: auto;
-  background-color: gray;
+.nav-hamburger {
+  display: none;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 header {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background-color: gray;
 }
 
@@ -137,75 +138,18 @@ hr:not(.thunder) {
           animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes trolley-ride {
-  0% {
-    left: 0px;
-  }
-  50% {
-    left: 230px;
-  }
-  100% {
-    left: 200px;
-  }
-}
-
-@keyframes trolley-ride {
-  0% {
-    left: 0px;
-  }
-  50% {
-    left: 230px;
-  }
-  100% {
-    left: 200px;
-  }
-}
-@-webkit-keyframes rain {
-  from {
-    transform: rotate(105deg) translateX(0);
-  }
-  to {
-    transform: rotate(105deg) translateX(220px);
-  }
-}
-@keyframes rain {
-  from {
-    transform: rotate(105deg) translateX(0);
-  }
-  to {
-    transform: rotate(105deg) translateX(220px);
-  }
-}
-@-webkit-keyframes thunder {
-  0% {
-    background-color: transparent;
-  }
-  1% {
-    background-color: white;
-  }
-  2% {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  8% {
-    background-color: transparent;
-  }
-}
-@keyframes thunder {
-  0% {
-    background-color: transparent;
-  }
-  1% {
-    background-color: white;
-  }
-  2% {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  8% {
-    background-color: transparent;
-  }
-}
 @media (max-width: 40em) {
+  nav {
+    justify-content: space-between;
+  }
+  .logo {
+    margin-left: 1rem;
+  }
   ul {
     display: none;
+  }
+  .nav-hamburger {
+    display: block;
+    margin-right: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */
