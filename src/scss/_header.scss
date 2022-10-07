@@ -1,5 +1,25 @@
 header {
     width: 100vw;
+    height: 100vh;
+}
+
+.header_img {
+    width: 100vw;
     height: auto;
-    background-color: gray;
+    z-index: -1;
+    position: absolute;
+}
+
+.header_text-content {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_title {
+    font-size: 3rem;
+    color: white;
 }

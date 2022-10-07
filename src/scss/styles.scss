@@ -1,6 +1,7 @@
 @use './nav';
 @use './header';
-
+@use './services';
+@use './animations';
 
 
 .promo-container {
@@ -31,15 +32,15 @@
 }
 
 .promo-container-2 {
-  width: 100vw;
-  height: auto;
-  background-color: lightgray;
+    width: 100vw;
+    height: auto;
+    background-color: lightgray;
 }
 
 .promo-trolley-img {
-  position: relative;
-  left: 0px;
-  animation: trolley-ride 2s;
+    position: relative;
+    left: 0px;
+    animation: trolley-ride 2s;
 }
 
 hr.thunder {

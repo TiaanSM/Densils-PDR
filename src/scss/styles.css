@@ -59,10 +59,103 @@ a {
 
 header {
   width: 100vw;
-  height: auto;
-  background-color: gray;
+  height: 100vh;
 }
 
+.header_img {
+  width: 100vw;
+  height: auto;
+  z-index: -1;
+  position: absolute;
+}
+
+.header_text-content {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_title {
+  font-size: 3rem;
+  color: white;
+}
+
+.service_section {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+@-webkit-keyframes trolley-ride {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 230px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+@keyframes trolley-ride {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 230px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+@-webkit-keyframes rain {
+  from {
+    transform: rotate(105deg) translateX(0);
+  }
+  to {
+    transform: rotate(105deg) translateX(220px);
+  }
+}
+@keyframes rain {
+  from {
+    transform: rotate(105deg) translateX(0);
+  }
+  to {
+    transform: rotate(105deg) translateX(220px);
+  }
+}
+@-webkit-keyframes thunder {
+  0% {
+    background-color: transparent;
+  }
+  1% {
+    background-color: white;
+  }
+  2% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  8% {
+    background-color: transparent;
+  }
+}
+@keyframes thunder {
+  0% {
+    background-color: transparent;
+  }
+  1% {
+    background-color: white;
+  }
+  2% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  8% {
+    background-color: transparent;
+  }
+}
 .promo-container {
   background-image: linear-gradient(to bottom, #030420, #000000 70%);
   display: flex;
