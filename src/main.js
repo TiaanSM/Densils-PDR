@@ -1,4 +1,4 @@
-/*
+
 let hrElement;
 let counter = 100;
 
@@ -13,4 +13,3 @@ for (let i = 0; i < counter; i++) {
   }
   document.body.appendChild(hrElement);
 }
-*/

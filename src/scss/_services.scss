@@ -1,6 +1,19 @@
-
-.service_section {
+.offers_section {
     width: 100vw;
-    height: 100vh;
-    background-color: lightgray;
+    height: 450px;
+    background-color: navy;
+}
+
+.offer_card-container {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.offer_card {
+    width: 250px;
+    height: 250px;
+    background-color: gray;
 }

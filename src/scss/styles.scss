@@ -3,6 +3,11 @@
 @use './services';
 @use './animations';
 
+.hail-damage_section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+}
 
 .promo-container {
     background-image: linear-gradient(to bottom, #030420, #000000 70%);
@@ -10,7 +15,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    height: 200px;
+    height: 250px;
     overflow: hidden;
     position: relative;
 }
@@ -61,7 +66,7 @@ hr:not(.thunder) {
     border-right-color: rgba(255, 255, 255, 0.7);
     border-right-width: 50px;
     position: absolute;
-    bottom: -15rem;  /* to move animation*/ 
+    top: 73rem;  /* to move animation*/ 
     transform-origin: 100% 50%;
     animation-name: rain;
     animation-duration: 1s;
