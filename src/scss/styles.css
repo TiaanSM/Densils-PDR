@@ -6,8 +6,8 @@
 }
 
 :root {
-  --thunder-duration: 5s;
-  --thunder-delay: 10s;
+  --thunder-duration: 2s;
+  --thunder-delay: 20s;
 }
 
 body {
@@ -175,10 +175,34 @@ header {
     background-color: transparent;
   }
 }
+.minor-damage_section {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+}
+
 .hail-damage_section {
   width: 100vw;
   height: 100vh;
+  background-color: lightgray;
+}
+
+.brand-promo_section {
+  width: 100vw;
+  height: 400px;
   background-color: #333;
+}
+
+.locations_section {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightsalmon;
+}
+
+.contact_section {
+  width: 100vw;
+  height: 400px;
+  background-color: lightgray;
 }
 
 .promo-container {
@@ -211,7 +235,7 @@ header {
 .promo-container-2 {
   width: 100vw;
   height: auto;
-  background-color: lightgray;
+  background-color: rgb(133, 133, 133);
 }
 
 .promo-trolley-img {
