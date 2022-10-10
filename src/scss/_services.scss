@@ -1,19 +1,47 @@
 .offers_section {
     width: 100vw;
-    height: 450px;
-    background-color: navy;
+    height: auto;
+}
+
+.offers_title {
+    font-size: 3rem;
+    text-align: center;
+    width: 100vw;
+    background-color: white;
+    padding: 2rem 0rem;
 }
 
 .offer_card-container {
     width: 100vw;
-    height: 400px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0rem;
 }
 
 .offer_card {
     width: 250px;
     height: 250px;
-    background-color: gray;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.offer_card-title {
+    color: white;
+    margin: 1rem 1rem 0rem 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.offer_card-desc {
+    color: white;
+    margin: 1rem;
+    text-align: center;
 }
