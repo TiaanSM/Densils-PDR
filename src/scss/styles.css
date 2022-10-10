@@ -189,8 +189,23 @@ header {
 
 .brand-promo_section {
   width: 100vw;
-  height: 400px;
-  background-color: #333;
+  height: auto;
+  background-color: white;
+}
+
+.brand-title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.brand-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2rem;
 }
 
 .locations_section {
