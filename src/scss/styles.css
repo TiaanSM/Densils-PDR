@@ -220,6 +220,17 @@ header {
     background-color: transparent;
   }
 }
+.contact_section {
+  width: 100vw;
+  height: 400px;
+  background-color: lightgray;
+}
+
+.contact_title {
+  font-size: 3rem;
+  text-align: center;
+}
+
 .copyright {
   width: 100vw;
   height: auto;
@@ -256,8 +267,21 @@ header {
 
 .hail-damage_section {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background-color: lightgray;
+}
+
+.section_content-container-2 {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.text-content-title-2 {
+  font-size: 2rem;
 }
 
 .brand-promo_section {
@@ -279,12 +303,6 @@ header {
   justify-content: space-evenly;
   align-items: center;
   padding-bottom: 2rem;
-}
-
-.contact_section {
-  width: 100vw;
-  height: 400px;
-  background-color: lightgray;
 }
 
 .promo-container {
