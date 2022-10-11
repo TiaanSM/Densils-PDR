@@ -3,11 +3,31 @@
 @use './services';
 @use './locations';
 @use './animations';
+@use './footer';
 
 .minor-damage_section {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: lightgray;
+    padding: 2rem 0rem;
+}
+
+.section_title {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.section_content-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-content-title {
+    font-size: 2rem;
 }
 
 .hail-damage_section {
@@ -70,16 +90,27 @@
     font-size: 2rem;
 }
 
-.promo-container-2 {
+.promo-container-trolley {
     width: 100vw;
     height: auto;
-    background-color: rgb(133, 133, 133);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+.promo-text {
+    position: absolute;
+    left: 10rem;
+    font-size: 2rem;
+    color: black;
 }
 
 .promo-trolley-img {
     position: relative;
-    left: 0px;
-    animation: trolley-ride 2s;
+    right: 0rem;
+    margin-top: 2rem;
+    animation: trolley-ride 4s;
 }
 
 hr.thunder {

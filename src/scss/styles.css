@@ -23,7 +23,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgb(51, 51, 51);
+  background-color: #030420;
 }
 
 .logo {
@@ -60,6 +60,7 @@ a {
 header {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 .header_img {
@@ -69,23 +70,26 @@ header {
   position: absolute;
 }
 
-.header_text-content {
+.header_content {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .header_title {
-  font-size: 3rem;
-  color: white;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .header_desc {
-  color: white;
+  text-align: center;
+}
+
+.header_vid {
+  position: absolute;
+  right: 4rem;
+  bottom: 4rem;
 }
 
 .offers_section {
@@ -108,13 +112,13 @@ header {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2rem 0rem;
+  padding: 2rem 0rem 4rem 0rem;
 }
 
 .offer_card {
   width: 250px;
   height: 250px;
-  background-color: #333;
+  background-color: rgba(3, 4, 32, 0.9254901961);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,25 +155,25 @@ header {
 
 @-webkit-keyframes trolley-ride {
   0% {
-    left: 0px;
+    left: 0rem;
   }
   50% {
-    left: 230px;
+    left: 875px;
   }
   100% {
-    left: 200px;
+    left: 850px;
   }
 }
 
 @keyframes trolley-ride {
   0% {
-    left: 0px;
+    left: 0rem;
   }
   50% {
-    left: 230px;
+    left: 875px;
   }
   100% {
-    left: 200px;
+    left: 850px;
   }
 }
 @-webkit-keyframes rain {
@@ -216,10 +220,38 @@ header {
     background-color: transparent;
   }
 }
+.copyright {
+  width: 100vw;
+  height: auto;
+  padding: 1rem 0rem;
+  background-color: #030420;
+  color: white;
+  text-align: center;
+}
+
 .minor-damage_section {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background-color: lightgray;
+  padding: 2rem 0rem;
+}
+
+.section_title {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.section_content-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.text-content-title {
+  font-size: 2rem;
 }
 
 .hail-damage_section {
@@ -282,17 +314,28 @@ header {
   font-size: 2rem;
 }
 
-.promo-container-2 {
+.promo-container-trolley {
   width: 100vw;
   height: auto;
-  background-color: rgb(133, 133, 133);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+}
+
+.promo-text {
+  position: absolute;
+  left: 10rem;
+  font-size: 2rem;
+  color: black;
 }
 
 .promo-trolley-img {
   position: relative;
-  left: 0px;
-  -webkit-animation: trolley-ride 2s;
-          animation: trolley-ride 2s;
+  right: 0rem;
+  margin-top: 2rem;
+  -webkit-animation: trolley-ride 4s;
+          animation: trolley-ride 4s;
 }
 
 hr.thunder {
