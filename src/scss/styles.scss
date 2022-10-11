@@ -1,6 +1,7 @@
 @use './nav';
 @use './header';
 @use './services';
+@use './locations';
 @use './animations';
 
 .minor-damage_section {
@@ -34,12 +35,6 @@
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 2rem;
-}
-
-.locations_section {
-    width: 100vw;
-    height: 100vh;
-    background-color: lightsalmon;
 }
 
 .contact_section {
