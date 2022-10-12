@@ -179,6 +179,22 @@ header {
     left: 850px;
   }
 }
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 @-webkit-keyframes rain {
   from {
     transform: rotate(105deg) translateX(0);
@@ -365,7 +381,7 @@ header {
   position: absolute;
   left: 10rem;
   font-size: 2rem;
-  color: black;
+  opacity: 0%;
 }
 
 .promo-trolley-img {

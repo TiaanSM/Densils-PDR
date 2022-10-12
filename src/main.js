@@ -19,12 +19,18 @@ for (let i = 0; i < counter; i++) {
 // email functionality
 
 
+const trolleySection = document.querySelector('.promo-container-trolley');
 
-const observer = new IntersectionObserver((entries) => {
-  const trolleyElement = document.querySelector('.promo-container-trolley');
-  const trolley = document.querySelector('.promo-trolley-img');
-  if (trolleyElement.isIntersecting) {
-    trolley.style.animation = 'trolley-ride 4s';
+const checkIsVisible = (element) => {
+  const rect = element.getBoundingClientRect();
+  if (rect.bottom <= window.innerHeight) {
+    const trolley = document.querySelector('.promo-trolley-img');
+    const texts = document.querySelector('.promo-text');
+    trolley.style.animation = 'trolley-ride 4s forwards';
+    texts.style.animation = 'fade-in 2s ease-in forwards';
   }
-});
+};
 
+document.addEventListener('scroll', () => {
+  checkIsVisible(trolleySection);
+});
