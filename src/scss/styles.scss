@@ -9,7 +9,7 @@
 .minor-damage_section {
     width: 100vw;
     height: auto;
-    background-color: lightgray;
+    background-color: white;
     padding: 2rem 0rem;
 }
 
@@ -17,6 +17,7 @@
     font-size: 3rem;
     text-align: center;
     padding-bottom: 2rem;
+    color: #0e1046;
 }
 
 .section_content-container {
@@ -25,16 +26,27 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .text-content-title {
     font-size: 2rem;
 }
 
+.text-content-desc {
+    font-size: 1.5rem;
+    margin: 2rem 0rem 3rem 0rem;
+}
+
+.text-content-cta {
+    padding: 1rem 2rem;
+    background-color: #030420;
+}
+
 .hail-damage_section {
     width: 100vw;
     height: auto;
-    background-color: lightgray;
+    padding: 2rem 0rem;
 }
 
 .section_content-container-2 {
@@ -48,6 +60,11 @@
 
 .text-content-title-2 {
     font-size: 2rem;
+}
+
+.text-content-desc-2 {
+    margin: 2rem 0rem 3rem 0rem;
+    font-size: 1.5rem;
 }
 
 .brand-promo_section {
@@ -104,7 +121,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: gray;
+    background-color: whitesmoke;
 }
 
 .promo-text {
@@ -118,7 +135,6 @@
     position: relative;
     right: 0rem;
     margin-top: 2rem;
-    animation: trolley-ride 4s;
 }
 
 hr.thunder {

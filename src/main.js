@@ -17,3 +17,14 @@ for (let i = 0; i < counter; i++) {
 
 // page animations
 // email functionality
+
+
+
+const observer = new IntersectionObserver((entries) => {
+  const trolleyElement = document.querySelector('.promo-container-trolley');
+  const trolley = document.querySelector('.promo-trolley-img');
+  if (trolleyElement.isIntersecting) {
+    trolley.style.animation = 'trolley-ride 4s';
+  }
+});
+
