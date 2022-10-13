@@ -71,28 +71,32 @@ header {
 }
 
 .header_content {
-  width: 100vw;
-  height: 100%;
+  width: 60%;
+  height: auto;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(3, 4, 32, 0.8078431373);
+  margin-inline: auto;
+  padding-inline: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 0rem 0rem 1rem 1rem;
 }
 
 .header_title {
   font-size: 4rem;
-  text-align: center;
-  padding-top: 8rem;
   color: white;
+  text-align: center;
+  padding-top: 3rem;
 }
 
 .header_desc {
-  text-align: center;
   color: white;
   font-size: 2rem;
-}
-
-.header_vid {
-  position: absolute;
-  right: 4rem;
-  bottom: 4rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .offers_section {
@@ -141,6 +145,67 @@ header {
   color: white;
   margin: 1rem;
   text-align: center;
+}
+
+.minor-damage_section {
+  width: 100vw;
+  height: auto;
+  background-color: white;
+  padding: 2rem 0rem;
+}
+
+.section_title {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #0e1046;
+}
+
+.section_content-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text-content-title {
+  font-size: 2rem;
+}
+
+.text-content-desc {
+  font-size: 1.5rem;
+  margin: 2rem 0rem 3rem 0rem;
+}
+
+.text-content-cta {
+  padding: 1rem 2rem;
+  background-color: #030420;
+}
+
+.hail-damage_section {
+  width: 100vw;
+  height: auto;
+  padding: 2rem 0rem;
+}
+
+.section_content-container-2 {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.text-content-title-2 {
+  font-size: 2rem;
+}
+
+.text-content-desc-2 {
+  margin: 2rem 0rem 3rem 0rem;
+  font-size: 1.5rem;
 }
 
 .locations_section {
@@ -250,6 +315,14 @@ header {
   text-align: center;
 }
 
+.contact_email {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .copyright {
   width: 100vw;
   height: auto;
@@ -257,67 +330,6 @@ header {
   background-color: #030420;
   color: white;
   text-align: center;
-}
-
-.minor-damage_section {
-  width: 100vw;
-  height: auto;
-  background-color: white;
-  padding: 2rem 0rem;
-}
-
-.section_title {
-  font-size: 3rem;
-  text-align: center;
-  padding-bottom: 2rem;
-  color: #0e1046;
-}
-
-.section_content-container {
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.text-content-title {
-  font-size: 2rem;
-}
-
-.text-content-desc {
-  font-size: 1.5rem;
-  margin: 2rem 0rem 3rem 0rem;
-}
-
-.text-content-cta {
-  padding: 1rem 2rem;
-  background-color: #030420;
-}
-
-.hail-damage_section {
-  width: 100vw;
-  height: auto;
-  padding: 2rem 0rem;
-}
-
-.section_content-container-2 {
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-bottom: 2rem;
-}
-
-.text-content-title-2 {
-  font-size: 2rem;
-}
-
-.text-content-desc-2 {
-  margin: 2rem 0rem 3rem 0rem;
-  font-size: 1.5rem;
 }
 
 .brand-promo_section {

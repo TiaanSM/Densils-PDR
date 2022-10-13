@@ -12,26 +12,30 @@ header {
 }
 
 .header_content {
-    width: 100vw;
-    height: 100%;
+    width: 60%;
+    height: auto;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #030420ce;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0rem 0rem 1rem 1rem;
 }
 
 .header_title {
     font-size: 4rem;
-    text-align: center;
-    padding-top: 8rem;
     color: white;
+    text-align: center;
+    padding-top: 3rem;
 }
 
 .header_desc {
-    text-align: center;
     color: white;
     font-size: 2rem;
-}
-
-.header_vid {
-    position: absolute;
-    right: 4rem;
-    bottom: 4rem;
+    text-align: center;
+    margin-top: 1rem;
 }

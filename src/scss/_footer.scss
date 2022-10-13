@@ -1,3 +1,24 @@
+
+.contact_section {
+    width: 100vw;
+    height: 400px;
+    background-color: lightgray;
+}
+
+.contact_title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contact_email {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .copyright {
     width: 100vw;
     height: auto;
