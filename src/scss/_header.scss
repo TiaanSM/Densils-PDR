@@ -63,12 +63,12 @@ a {
 /* Article section */
 
 header {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 header > article {
     display: grid;
-    height: 100vh;
+    height: 100%;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
 }

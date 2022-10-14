@@ -65,7 +65,7 @@ header {
 
 header > article {
   display: grid;
-  height: 100vh;
+  height: 100%;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 1fr;
 }
@@ -106,30 +106,30 @@ header > article {
   font-size: 3rem;
   text-align: center;
   width: 100vw;
-  background-color: white;
+  color: white;
   padding: 2rem 0rem;
-  color: #030420;
+  background-color: #030420;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .offer_card-container {
   width: 100vw;
   height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2rem 0rem 4rem 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #030420;
 }
 
 .offer_card {
-  width: 250px;
-  height: 250px;
+  width: auto;
+  height: auto;
   background-color: rgba(3, 4, 32, 0.9254901961);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 2px 2px 5px gray;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem 1rem;
 }
 
 .offer_card-title {
@@ -149,32 +149,43 @@ header > article {
   width: 100vw;
   height: auto;
   background-color: white;
-  padding: 2rem 0rem;
 }
 
 .section_title {
   font-size: 3rem;
   text-align: center;
-  padding-bottom: 2rem;
-  color: #0e1046;
+  padding: 2rem 0rem;
+  color: white;
+  background-color: #030420;
+  border-bottom: rgba(255, 255, 255, 0.1);
 }
 
 .section_content-container {
   width: 100vw;
   height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+}
+
+.text-content {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .text-content-title {
   font-size: 2rem;
+  background-color: #030420;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .text-content-desc {
   font-size: 1.5rem;
-  margin: 2rem 0rem 3rem 0rem;
+  background-color: #030420;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .text-content-cta {
@@ -348,7 +359,6 @@ header > article {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 2rem;
 }
 
 .promo-container {
