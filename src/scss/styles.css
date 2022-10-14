@@ -17,86 +17,84 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Nav section */
 nav {
-  width: 100%;
-  height: 4rem;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #030420;
 }
 
-.logo {
+.nav-section {
+  padding: 2rem 2rem;
+  display: flex;
+  gap: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_logo-section {
+  justify-content: flex-start;
   color: white;
+}
+
+.nav-logo {
   font-size: 2rem;
-  font-weight: 700;
 }
 
-.pdr-accent {
-  background-color: white;
-  color: black;
-  border-radius: 5px;
+.nav_logo-section,
+.nav_link-section {
+  flex-basis: 33.3333333333%;
 }
 
-.nav-links > li {
-  display: inline;
-  margin-inline: 2rem;
-  list-style: none;
+.nav_social-section,
+.nav_contact-section {
+  flex-grow: 1;
 }
 
 a {
-  color: white;
   text-decoration: none;
-  font-size: 1.3rem;
+  color: white;
 }
 
-.nav-hamburger {
-  display: none;
-  background-color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
+/* Article section */
 header {
-  width: 100vw;
+  flex-grow: 1;
+}
+
+header > article {
+  display: grid;
   height: 100vh;
-  position: relative;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
 }
 
-.header_img {
-  width: 100vw;
-  height: auto;
-  z-index: -1;
-  position: absolute;
+.article-section {
+  height: 100%;
+  background-color: #030420;
 }
 
-.header_content {
-  width: 60%;
-  height: auto;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(3, 4, 32, 0.8078431373);
-  margin-inline: auto;
-  padding-inline: 2rem;
-  padding-bottom: 2rem;
-  border-radius: 0rem 0rem 1rem 1rem;
-}
-
-.header_title {
-  font-size: 4rem;
+.article_description-section {
   color: white;
-  text-align: center;
-  padding-top: 3rem;
 }
 
-.header_desc {
+.article_title-section {
   color: white;
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 1rem;
+}
+
+.article_nav-section {
+  color: white;
+}
+
+.article_description-section,
+.article_nav-section {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.article_title-section,
+.article_nav-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .offers_section {
@@ -110,6 +108,7 @@ header {
   width: 100vw;
   background-color: white;
   padding: 2rem 0rem;
+  color: #030420;
 }
 
 .offer_card-container {
@@ -130,7 +129,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 1rem;
   box-shadow: 2px 2px 5px gray;
 }
 
