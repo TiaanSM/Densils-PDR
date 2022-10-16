@@ -1,0 +1,41 @@
+.about_section {
+    width: 100vw;
+    height: auto;
+}
+
+.about_title {
+    font-size: 3rem;
+    color: white;
+    background-color: #030420;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about_content {
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.about_places-container {
+    background-color: #030420;
+    border: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.about_map-img {
+    width: auto;
+    height: auto;
+}
+
+.about_content-container {
+    background-color: #030420;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.about_contact-container {
+    background-color: #030420;
+    border: 1px solid rgb(255, 255, 255, 0.1);
+}
