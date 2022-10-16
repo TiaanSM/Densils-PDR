@@ -100,6 +100,12 @@ header > article {
     border-top: 1px solid rgb(255, 255, 255, 0.1);
 }
 
+.article_description-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 
 @media (max-width: 320px) {

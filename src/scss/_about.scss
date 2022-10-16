@@ -59,20 +59,18 @@
 }
 
 .about_content-container {
-    background-color: #030420;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    background-color: whitesmoke;
+    border-bottom: 1px solid #030420;
 }
 
 .about_content-title {
-    color: white;
     font-size: 2rem;
     text-align: center;
     padding: 1.5rem 0rem;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    border-bottom: 1px solid #030420;
 }
 
 .about_content-desc {
-    color: white;
     text-align: center;
     padding: 2rem;
     font-size: 1.3rem;
@@ -81,12 +79,46 @@
 .about_contact-container {
     background-color: #030420;
     border: 1px solid rgb(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .about_contact-title {
+    width: 100%;
     color: white;
     font-size: 2rem;
     text-align: center;
     padding: 1.5rem 0rem;
     border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.mail-link, 
+.phone-link,
+.facebook-link {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 320px) {
+
+    .about_content {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .places-list {
+        width: 100vw;
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    .about-map-img {
+        width: 320px;
+        height: auto;
+        margin: 1rem;
+    }
 }

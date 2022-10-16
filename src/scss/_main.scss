@@ -120,4 +120,38 @@
     .promo-text {
         display: none;
     }
+
+    .section_title {
+        padding: 1rem 2rem 0rem 2rem;
+        font-size: 3rem;
+    }
+
+    .section_content-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text-content-cta {
+        margin-bottom: 2rem;
+    }
+
+    .dents-image {
+        width: 320px;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .section_title-2 {
+        padding: 1rem 2rem 0rem 2rem;
+        font-size: 3rem;
+    }
+
+    .section_content-container-2 {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text-content-cta-2 {
+        margin-bottom: 2rem;
+    }
 }

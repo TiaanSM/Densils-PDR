@@ -97,6 +97,13 @@ header > article {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.article_description-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media (max-width: 320px) {
   .nav_social-section,
 .nav_contact-section,
@@ -289,20 +296,34 @@ header > article {
   .promo-text {
     display: none;
   }
+  .section_title {
+    padding: 1rem 2rem 0rem 2rem;
+    font-size: 3rem;
+  }
+  .section_content-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .text-content-cta {
+    margin-bottom: 2rem;
+  }
+  .dents-image {
+    width: 320px;
+    height: auto;
+    margin-top: 2rem;
+  }
+  .section_title-2 {
+    padding: 1rem 2rem 0rem 2rem;
+    font-size: 3rem;
+  }
+  .section_content-container-2 {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .text-content-cta-2 {
+    margin-bottom: 2rem;
+  }
 }
-.locations_section {
-  width: 100vw;
-  height: 100vh;
-  background-color: lightsalmon;
-}
-
-.location_title {
-  font-size: 3rem;
-  width: 100%;
-  text-align: center;
-  padding: 2rem 0rem;
-}
-
 @-webkit-keyframes trolley-ride {
   0% {
     left: 0rem;
@@ -314,7 +335,6 @@ header > article {
     left: 850px;
   }
 }
-
 @keyframes trolley-ride {
   0% {
     left: 0rem;
@@ -447,20 +467,18 @@ header > article {
 }
 
 .about_content-container {
-  background-color: #030420;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: whitesmoke;
+  border-bottom: 1px solid #030420;
 }
 
 .about_content-title {
-  color: white;
   font-size: 2rem;
   text-align: center;
   padding: 1.5rem 0rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #030420;
 }
 
 .about_content-desc {
-  color: white;
   text-align: center;
   padding: 2rem;
   font-size: 1.3rem;
@@ -469,9 +487,14 @@ header > article {
 .about_contact-container {
   background-color: #030420;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .about_contact-title {
+  width: 100%;
   color: white;
   font-size: 2rem;
   text-align: center;
@@ -479,23 +502,34 @@ header > article {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.contact_section {
+.mail-link,
+.phone-link,
+.facebook-link {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 320px) {
+  .about_content {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .places-list {
+    width: 100vw;
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(12, 1fr);
+  }
+  .about-map-img {
+    width: 320px;
+    height: auto;
+    margin: 1rem;
+  }
+}
+footer {
   width: 100vw;
   height: 400px;
   background-color: lightgray;
-}
-
-.contact_title {
-  font-size: 3rem;
-  text-align: center;
-}
-
-.contact_email {
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .copyright {
