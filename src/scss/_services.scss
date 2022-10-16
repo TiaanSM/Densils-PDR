@@ -45,3 +45,22 @@
     margin: 1rem;
     text-align: center;
 }
+
+
+
+@media (max-width: 320px) {
+
+    .offers_title {
+        font-size: 2rem;
+        border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    }
+
+    .offer_card-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .offer_card {
+        padding: 2rem;
+    }
+}

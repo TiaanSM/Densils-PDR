@@ -82,3 +82,42 @@
     color: #030420;
     background-color: whitesmoke;
 }
+
+.promo-container-trolley {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.promo-text {
+    position: absolute;
+    left: 10rem;
+    font-size: 2rem;
+    opacity: 0%;
+}
+
+.promo-trolley-img {
+    position: relative;
+    right: 0rem;
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 320px) {
+
+    .promo-container-trolley {
+        justify-content: center;
+        position: relative;
+    }
+
+    .promo-trolley-img {
+        display: none;
+    }
+
+    .promo-text {
+        display: none;
+    }
+}

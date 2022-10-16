@@ -25,6 +25,34 @@
     border: 1px solid rgb(255, 255, 255, 0.1);
 }
 
+.places-title {
+    color: white;
+    font-size: 2rem;
+    padding: 1.5rem 0rem;
+    text-align: center;
+}
+
+.places-list {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.places-list > p {
+    color: white;
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.places-list > p:hover {
+    background-color: #060733;
+}
+
 .about_map-img {
     width: auto;
     height: auto;
@@ -35,7 +63,30 @@
     border-bottom: 1px solid rgb(255, 255, 255, 0.1);
 }
 
+.about_content-title {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem 0rem;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.about_content-desc {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
 .about_contact-container {
     background-color: #030420;
     border: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.about_contact-title {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem 0rem;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
 }

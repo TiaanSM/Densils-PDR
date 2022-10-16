@@ -53,28 +53,6 @@
     font-size: 2rem;
 }
 
-.promo-container-trolley {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: whitesmoke;
-}
-
-.promo-text {
-    position: absolute;
-    left: 10rem;
-    font-size: 2rem;
-    opacity: 0%;
-}
-
-.promo-trolley-img {
-    position: relative;
-    right: 0rem;
-    margin-top: 2rem;
-}
-
 hr.thunder {
     border: unset;
     position: absolute;
@@ -99,25 +77,4 @@ hr:not(.thunder) {
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-}
-
-
-
-@media (max-width: 40em) {
-    nav {
-        justify-content: space-between;
-    }
-
-    .logo {
-        margin-left: 1rem;
-    }
-
-    ul {
-      display: none;
-    }
-
-    .nav-hamburger {
-        display: block;
-        margin-right: 1rem;
-    }
 }
