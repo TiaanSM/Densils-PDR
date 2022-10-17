@@ -84,6 +84,10 @@ header > article {
 
 .article_title-section {
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
 }
 
 .article_nav-section {
@@ -105,6 +109,11 @@ header > article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.description-section {
+  margin: 2rem;
+  font-size: 1.5rem;
 }
 
 

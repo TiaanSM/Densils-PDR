@@ -81,6 +81,10 @@ header > article {
 
 .article_title-section {
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
 }
 
 .article_nav-section {
@@ -102,6 +106,11 @@ header > article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.description-section {
+  margin: 2rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 320px) {
@@ -626,7 +635,7 @@ hr:not(.thunder) {
   border-right-color: rgba(255, 255, 255, 0.7);
   border-right-width: 50px;
   position: absolute;
-  top: 73rem; /* to move animation*/
+  top: 121rem; /* to move animation*/
   transform-origin: 100% 50%;
   -webkit-animation-name: rain;
           animation-name: rain;

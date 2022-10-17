@@ -15,10 +15,6 @@ for (let i = 0; i < counter; i++) {
 }
 */
 
-// page animations
-// email functionality
-
-
 const trolleySection = document.querySelector('.promo-container-trolley');
 
 const checkIsVisible = (element) => {
