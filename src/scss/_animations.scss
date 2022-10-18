@@ -1,3 +1,50 @@
+.promo-container-trolley {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.promo-text {
+  font-size: 3rem;
+  width: 100%;
+  margin: 1rem;
+}
+
+.promo-trolley-img {
+  position: absolute;
+  margin-top: 3rem;
+}
+
+.promo-car-img2 {
+  margin-top: 1rem;
+}
+
+
+.promo_container {
+  background-image: linear-gradient(to bottom, #030420, #000000 70%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 250px;
+}
+
+.promo-car-img {
+  margin: 1rem;
+}
+
+.promo_title {
+  width: 50vw;
+  font-size: 3rem;
+  color: white;
+  margin: 1rem;
+}
+
+
+
 @keyframes trolley-ride {
 
     0% {

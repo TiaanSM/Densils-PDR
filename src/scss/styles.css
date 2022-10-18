@@ -58,6 +58,10 @@ a {
   color: white;
 }
 
+.hamburger {
+  display: none;
+}
+
 /* Article section */
 header {
   flex-grow: 1;
@@ -113,12 +117,53 @@ header > article {
   font-size: 1.5rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1100px) {
+  header > article {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .article_nav-section {
+    display: none;
+  }
+  .description-section {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+@media (max-width: 850px) {
+  .nav_contact-section {
+    display: none;
+  }
+  .article_title-section {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+}
+@media (max-width: 850px) {
+  .nav_social-section {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
   .nav_social-section,
 .nav_contact-section,
 .nav_link-section {
     display: none;
   }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 3rem;
+    cursor: pointer;
+  }
+}
+@media (max-width: 360px) {
   header > article {
     display: grid;
     height: auto;
@@ -174,6 +219,21 @@ header > article {
   text-align: center;
 }
 
+@media (max-width: 850px) {
+  .offer_card-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .offer_card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+@media (max-width: 460px) {
+  .offer_card-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
 @media (max-width: 320px) {
   .offers_title {
     font-size: 2rem;
@@ -233,22 +293,20 @@ header > article {
   width: 100vw;
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: whitesmoke;
 }
 
 .promo-text {
-  position: absolute;
-  left: 10rem;
   font-size: 2rem;
-  opacity: 0%;
+  width: 100%;
+  margin: 1rem;
 }
 
 .promo-trolley-img {
   position: relative;
-  right: 0rem;
-  margin-top: 2rem;
+  left: 10rem;
 }
 
 @media (max-width: 320px) {
@@ -336,6 +394,50 @@ header > article {
     margin-top: 2rem;
   }
 }
+.promo-container-trolley {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.promo-text {
+  font-size: 3rem;
+  width: 100%;
+  margin: 1rem;
+}
+
+.promo-trolley-img {
+  position: absolute;
+  margin-top: 3rem;
+}
+
+.promo-car-img2 {
+  margin-top: 1rem;
+}
+
+.promo_container {
+  background-image: linear-gradient(to bottom, #030420, #000000 70%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 250px;
+}
+
+.promo-car-img {
+  margin: 1rem;
+}
+
+.promo_title {
+  width: 50vw;
+  font-size: 3rem;
+  color: white;
+  margin: 1rem;
+}
+
 @-webkit-keyframes trolley-ride {
   0% {
     left: 0rem;
@@ -347,6 +449,7 @@ header > article {
     left: 850px;
   }
 }
+
 @keyframes trolley-ride {
   0% {
     left: 0rem;
