@@ -1,0 +1,80 @@
+.minor-damage_section {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+}
+
+.section_title {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0rem;
+    background-color: whitesmoke;
+    border-top: 1px solid #030420;
+}
+
+.section_content-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 2rem 0rem;
+}
+
+.text-content {
+    background-color: whitesmoke;
+}
+
+.text-content-title {
+    font-size: 2rem;
+    padding: 0rem 2rem;
+}
+
+.text-content-desc {
+    font-size: 1.5rem;
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+.text-content-cta {
+    padding: 1rem 2rem;
+    background-color: #030420;
+    margin: 2rem;
+}
+
+
+@media (max-width: 320px) {
+    
+    .promo-container-trolley {
+        justify-content: center;
+        position: relative;
+    }
+
+    .promo-trolley-img {
+        display: none;
+    }
+
+    .promo-text {
+        display: none;
+    }
+
+    .section_title {
+        padding: 1rem 2rem 0rem 2rem;
+        font-size: 3rem;
+    }
+
+    .section_content-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text-content-cta {
+        margin-bottom: 2rem;
+    }
+
+    .dents-image {
+        width: 320px;
+        height: auto;
+        margin-top: 2rem;
+    }
+}

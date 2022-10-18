@@ -187,6 +187,83 @@ header > article {
     padding: 2rem;
   }
 }
+.hail-damage_section {
+  width: 100vw;
+  height: auto;
+}
+
+.section_title-2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0rem;
+  color: white;
+  background-color: #000000;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section_content-container-2 {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 0rem;
+  background-color: #000000;
+}
+
+.text-content-title-2 {
+  width: 32rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.text-content-desc-2 {
+  margin: 2rem 0rem 3rem 0rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.text-content-cta-2 {
+  padding: 1rem 2rem;
+  color: #030420;
+  background-color: whitesmoke;
+}
+
+.promo-container-trolley {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.promo-text {
+  position: absolute;
+  left: 10rem;
+  font-size: 2rem;
+  opacity: 0%;
+}
+
+.promo-trolley-img {
+  position: relative;
+  right: 0rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 320px) {
+  .hail-damage_section {
+    width: 320px;
+    height: auto;
+  }
+  .section_title-2 {
+    text-align: center;
+  }
+  .section_content-container-2 {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .minor-damage_section {
   width: 100vw;
   height: auto;
@@ -231,69 +308,6 @@ header > article {
   margin: 2rem;
 }
 
-.hail-damage_section {
-  width: 100vw;
-  height: auto;
-}
-
-.section_title-2 {
-  font-size: 3rem;
-  text-align: center;
-  padding: 2rem 0rem;
-  color: white;
-  background-color: #000000;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.section_content-container-2 {
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 3rem 0rem;
-  background-color: #000000;
-}
-
-.text-content-title-2 {
-  font-size: 2rem;
-  color: white;
-}
-
-.text-content-desc-2 {
-  margin: 2rem 0rem 3rem 0rem;
-  font-size: 1.5rem;
-  color: white;
-}
-
-.text-content-cta-2 {
-  padding: 1rem 2rem;
-  color: #030420;
-  background-color: whitesmoke;
-}
-
-.promo-container-trolley {
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: whitesmoke;
-}
-
-.promo-text {
-  position: absolute;
-  left: 10rem;
-  font-size: 2rem;
-  opacity: 0%;
-}
-
-.promo-trolley-img {
-  position: relative;
-  right: 0rem;
-  margin-top: 2rem;
-}
-
 @media (max-width: 320px) {
   .promo-container-trolley {
     justify-content: center;
@@ -320,17 +334,6 @@ header > article {
     width: 320px;
     height: auto;
     margin-top: 2rem;
-  }
-  .section_title-2 {
-    padding: 1rem 2rem 0rem 2rem;
-    font-size: 3rem;
-  }
-  .section_content-container-2 {
-    justify-content: center;
-    flex-direction: column;
-  }
-  .text-content-cta-2 {
-    margin-bottom: 2rem;
   }
 }
 @-webkit-keyframes trolley-ride {
@@ -426,6 +429,7 @@ header > article {
   background-color: #030420;
   padding: 2rem;
   text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .about_content {
@@ -439,11 +443,16 @@ header > article {
 
 .about_places-container {
   background-color: #030420;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: auto;
 }
 
 .places-title {
   color: white;
+  background-color: #030420;
   font-size: 2rem;
   padding: 1.5rem 0rem;
   text-align: center;
@@ -547,6 +556,12 @@ header > article {
   .about-map-img {
     width: 320px;
     height: auto;
+  }
+  .about_places-container {
+    flex-wrap: wrap;
+  }
+  .place-list {
+    display: block;
   }
 }
 footer {
