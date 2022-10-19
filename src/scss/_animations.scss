@@ -6,6 +6,7 @@
   align-items: center;
   background-color: whitesmoke;
   padding: 2rem 0rem;
+  position: relative;
 }
 
 .promo-text {
@@ -45,6 +46,47 @@
   margin: 1rem;
 }
 
+
+@media (max-width: 360px) {
+
+  .promo-container-trolley {
+    flex-wrap: wrap;
+  }
+
+  .promo-trolley-img {
+    right: 15rem;
+    bottom: 2rem;
+    animation: trolley-mobile 2s ease forwards;
+  }
+
+  .promo_container {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    height: auto;
+  }
+
+  .promo_title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .promo-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+
+@keyframes trolley-mobile {
+
+  0% {
+    right: 15rem;
+  }
+
+  100% {
+    right: 10rem;
+  }
+}
 
 
 @keyframes trolley-ride {

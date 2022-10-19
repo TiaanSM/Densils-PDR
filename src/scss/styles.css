@@ -12,7 +12,7 @@
 
 body {
   overflow-x: hidden;
-  width: 100vw;
+  max-width: 100vw;
   height: auto;
   font-family: "Roboto", sans-serif;
 }
@@ -305,6 +305,7 @@ header > article {
 @media (max-width: 1100px) {
   .text-content-title-2 {
     text-align: center;
+    width: auto;
   }
   .text-content-desc-2 {
     text-align: center;
@@ -313,10 +314,13 @@ header > article {
     display: block;
     text-align: center;
   }
+  .dents-image2 {
+    max-width: 100vw;
+  }
 }
 @media (max-width: 360px) {
   .hail-damage_section {
-    width: 320px;
+    width: 100vw;
     height: auto;
   }
   .section_title-2 {
@@ -329,7 +333,7 @@ header > article {
   .dents-image2 {
     width: 340px;
     height: auto;
-    margin-top: 2rem;
+    margin: 1rem;
   }
 }
 .minor-damage_section {
@@ -424,6 +428,7 @@ header > article {
   align-items: center;
   background-color: whitesmoke;
   padding: 2rem 0rem;
+  position: relative;
 }
 
 .promo-text {
@@ -462,6 +467,46 @@ header > article {
   margin: 1rem;
 }
 
+@media (max-width: 360px) {
+  .promo-container-trolley {
+    flex-wrap: wrap;
+  }
+  .promo-trolley-img {
+    right: 15rem;
+    bottom: 2rem;
+    -webkit-animation: trolley-mobile 2s ease forwards;
+            animation: trolley-mobile 2s ease forwards;
+  }
+  .promo_container {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    height: auto;
+  }
+  .promo_title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .promo-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@-webkit-keyframes trolley-mobile {
+  0% {
+    right: 15rem;
+  }
+  100% {
+    right: 10rem;
+  }
+}
+@keyframes trolley-mobile {
+  0% {
+    right: 15rem;
+  }
+  100% {
+    right: 10rem;
+  }
+}
 @-webkit-keyframes trolley-ride {
   0% {
     left: 0rem;
@@ -473,7 +518,6 @@ header > article {
     left: 850px;
   }
 }
-
 @keyframes trolley-ride {
   0% {
     left: 0rem;
@@ -661,7 +705,7 @@ header > article {
   font-size: 1.5rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .about_content {
     height: 800px;
     grid-template-columns: 100%;
@@ -689,6 +733,11 @@ header > article {
   }
   .place-list {
     display: block;
+  }
+  .mapouter {
+    max-width: 100vw;
+    height: auto;
+    overflow-x: hidden;
   }
 }
 footer {
@@ -725,6 +774,10 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.brand-container > svg {
+  margin: 2rem;
 }
 
 hr.thunder {

@@ -115,7 +115,7 @@
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
 
     .about_content {
         height: 800px;
@@ -150,5 +150,11 @@
 
     .place-list {
         display: block;
+    }
+
+    .mapouter {
+        max-width: 100vw;
+        height: auto;
+        overflow-x: hidden;
     }
 }
