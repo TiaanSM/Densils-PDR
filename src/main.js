@@ -13,7 +13,7 @@ for (let i = 0; i < counter; i++) {
   }
   document.body.appendChild(hrElement);
 }
-
+*/
 
 const trolleySection = document.querySelector('.promo-container-trolley');
 
@@ -31,4 +31,3 @@ document.addEventListener('scroll', () => {
   checkIsVisible(trolleySection);
 });
 
-*/

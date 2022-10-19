@@ -59,10 +59,10 @@ hr:not(.thunder) {
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
 
-    .brand-container > svg {
-        width: 100%;
-        margin:1rem 3rem;
+    .brand-container {
+        justify-content: center;
+        flex-direction: column;
     }
 }
