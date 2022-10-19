@@ -96,6 +96,15 @@ header > article {
 
 .article_nav-section {
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.article_nav-section:hover {
+  background-color: #141636;
+  font-size: 1.5rem;
 }
 
 .article_description-section,

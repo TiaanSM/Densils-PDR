@@ -93,6 +93,15 @@ header > article {
 
 .article_nav-section {
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.article_nav-section:hover {
+  background-color: #141636;
+  font-size: 1.5rem;
 }
 
 .article_description-section,
@@ -429,6 +438,7 @@ header > article {
   background-color: whitesmoke;
   padding: 2rem 0rem;
   position: relative;
+  overflow-x: hidden;
 }
 
 .promo-text {
@@ -442,6 +452,7 @@ header > article {
   position: absolute;
   margin-top: 3rem;
   left: -10rem;
+  overflow-x: hidden;
 }
 
 .promo-car-img2 {
