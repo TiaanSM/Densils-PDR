@@ -50,7 +50,7 @@ hr:not(.thunder) {
     border-right-color: rgba(255, 255, 255, 0.7);
     border-right-width: 50px;
     position: absolute;
-    top: 121rem;  /* to move animation*/ 
+    top: 124rem;  /* to move animation*/ 
     transform-origin: 100% 50%;
     animation-name: rain;
     animation-duration: 1s;
@@ -64,5 +64,9 @@ hr:not(.thunder) {
     .brand-container {
         justify-content: center;
         flex-direction: column;
+    }
+
+    hr:not(.thunder) {
+        top: 240rem;
     }
 }

@@ -6,7 +6,7 @@ hamburger.addEventListener('click', () => {
   console.log(hamburgerMenu);
 });
 
-/*
+
 let hrElement;
 let counter = 100;
 
@@ -21,23 +21,23 @@ for (let i = 0; i < counter; i++) {
   }
   document.body.appendChild(hrElement);
 }
-*/
+
 
 const trolleySection = document.querySelector('.promo-container-trolley');
 
 const checkIsVisible = (element) => {
   const rect = element.getBoundingClientRect();
   if (rect.bottom <= window.innerHeight) {
+    const trolley = document.querySelector('.promo-trolley-img');
+    const texts = document.querySelector('.promo-text');
+
+    trolley.style.animation = 'trolley-ride 4s forwards';
+    texts.style.animation = 'fade-in 2s ease-in forwards';
 
     if (window.matchMedia("(max-width: 360px)").matches)  {
-          const trolley = document.querySelector('.promo-trolley-img');
-          const texts = document.querySelector('.promo-text');
           texts.style.animation = 'fade-in 2s ease-in forwards';
-          trolley.style.animation = 'trolley-mobile 2s ease-in forwards';
-        } else {
-          trolley.style.animation = 'trolley-ride 4s forwards';
-          texts.style.animation = 'fade-in 2s ease-in forwards';
-        }
+          trolley.style.animation = 'trolley-mobile 1s ease-in forwards';
+        } 
   }
 };
 
