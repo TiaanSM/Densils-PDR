@@ -129,6 +129,41 @@ header > article {
   font-size: 1.5rem;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+.active-menu {
+  position: fixed;
+  display: block;
+  width: 100vw;
+  height: auto;
+  background-color: #141538;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hamburger-menu-link1 {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.menu-socials {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-menu-link2 {
+  padding: 2rem;
+}
+
 @media (max-width: 1100px) {
 
   header > article {

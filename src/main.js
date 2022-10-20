@@ -1,3 +1,11 @@
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', () => {
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  hamburgerMenu.classList.toggle('active-menu');
+  console.log(hamburgerMenu);
+});
+
 /*
 let hrElement;
 let counter = 100;
@@ -24,9 +32,11 @@ const checkIsVisible = (element) => {
     if (window.matchMedia("(max-width: 360px)").matches)  {
           const trolley = document.querySelector('.promo-trolley-img');
           const texts = document.querySelector('.promo-text');
-          trolley.style.animation = 'trolley-ride 4s forwards';
           texts.style.animation = 'fade-in 2s ease-in forwards';
           trolley.style.animation = 'trolley-mobile 2s ease-in forwards';
+        } else {
+          trolley.style.animation = 'trolley-ride 4s forwards';
+          texts.style.animation = 'fade-in 2s ease-in forwards';
         }
   }
 };
