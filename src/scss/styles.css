@@ -340,7 +340,7 @@ header > article {
     flex-direction: column;
   }
   .dents-image2 {
-    width: 340px;
+    width: 320px;
     height: auto;
     margin: 1rem;
   }
@@ -503,18 +503,18 @@ header > article {
 }
 @-webkit-keyframes trolley-mobile {
   0% {
-    right: 15rem;
+    left: -20rem;
   }
   100% {
-    right: 10rem;
+    left: -6rem;
   }
 }
 @keyframes trolley-mobile {
   0% {
-    right: 15rem;
+    left: -20rem;
   }
   100% {
-    right: 10rem;
+    left: -6rem;
   }
 }
 @-webkit-keyframes trolley-ride {

@@ -20,10 +20,14 @@ const trolleySection = document.querySelector('.promo-container-trolley');
 const checkIsVisible = (element) => {
   const rect = element.getBoundingClientRect();
   if (rect.bottom <= window.innerHeight) {
-    const trolley = document.querySelector('.promo-trolley-img');
-    const texts = document.querySelector('.promo-text');
-    trolley.style.animation = 'trolley-ride 4s forwards';
-    texts.style.animation = 'fade-in 2s ease-in forwards';
+
+    if (window.matchMedia("(max-width: 360px)").matches)  {
+          const trolley = document.querySelector('.promo-trolley-img');
+          const texts = document.querySelector('.promo-text');
+          trolley.style.animation = 'trolley-ride 4s forwards';
+          texts.style.animation = 'fade-in 2s ease-in forwards';
+          trolley.style.animation = 'trolley-mobile 2s ease-in forwards';
+        }
   }
 };
 
@@ -31,7 +35,8 @@ document.addEventListener('scroll', () => {
   checkIsVisible(trolleySection);
 });
 
-/* Image changes
+/*
+
 let images = ['photoFromInternet', 'photoFromInternet2', 'photoFromInternet3'];
 
 let index = 0;
