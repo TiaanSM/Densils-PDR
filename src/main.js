@@ -1,29 +1,16 @@
 const hamburger = document.querySelector('.hamburger');
+const hamburgerLink = document.querySelectorAll('hamburger-menu-link1');
+const trolleySection = document.querySelector('.promo-container-trolley');
 
 hamburger.addEventListener('click', () => {
   const hamburgerMenu = document.querySelector('.hamburger-menu');
   hamburgerMenu.classList.toggle('active-menu');
-  console.log(hamburgerMenu);
 });
 
-
-let hrElement;
-let counter = 100;
-
-for (let i = 0; i < counter; i++) {
-  hrElement = document.createElement("HR");
-  if (i == counter - 1) {
-    hrElement.className = "thunder";
-  } else {
-    hrElement.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
-    hrElement.style.animationDuration = 0.2 + Math.random() * 0.3 + "s";
-    hrElement.style.animationDelay = Math.random() * 5 + "s";
-  }
-  document.body.appendChild(hrElement);
-}
-
-
-const trolleySection = document.querySelector('.promo-container-trolley');
+hamburgerLink.addEventListener('click', () => {
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  hamburgerMenu.classList.remove('active-menu');
+});
 
 const checkIsVisible = (element) => {
   const rect = element.getBoundingClientRect();
@@ -44,6 +31,22 @@ const checkIsVisible = (element) => {
 document.addEventListener('scroll', () => {
   checkIsVisible(trolleySection);
 });
+
+
+let hrElement;
+let counter = 100;
+
+for (let i = 0; i < counter; i++) {
+  hrElement = document.createElement("HR");
+  if (i == counter - 1) {
+    hrElement.className = "thunder";
+  } else {
+    hrElement.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+    hrElement.style.animationDuration = 0.2 + Math.random() * 0.3 + "s";
+    hrElement.style.animationDelay = Math.random() * 5 + "s";
+  }
+  document.body.appendChild(hrElement);
+}
 
 /*
 
